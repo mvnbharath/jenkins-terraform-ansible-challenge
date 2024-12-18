@@ -8,7 +8,7 @@ pipeline {
             steps {
                 deleteDir()
                 sh 'echo cloning repo'
-                sh 'https://github.com/mvnbharath/jenkins-terraform-ansible-challenge.git' 
+                sh 'git clone https://github.com/mvnbharath/jenkins-terraform-ansible-challenge.git' 
             }
         }
         
