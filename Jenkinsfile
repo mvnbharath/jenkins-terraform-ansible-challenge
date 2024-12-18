@@ -18,8 +18,7 @@ pipeline {
                     dir('/var/lib/jenkins/workspace/challenge6/jenkins-terraform-ansible-challenge/') {
                     sh 'pwd'
                     sh 'terraform init'
-                    sh 'terraform validate'
-                    // sh 'terraform destroy -auto-approve'
+                    
                     sh 'terraform plan'
                     sh 'terraform apply -auto-approve'
                     }
