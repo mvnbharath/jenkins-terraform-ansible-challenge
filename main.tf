@@ -1,11 +1,11 @@
 provider "aws" {
-  region = "ap-south-1"
+  region = "us-east-1"
 }
 
 resource "aws_instance" "backend" { #ubuntu.yaml NETADATA
   ami                    = "ami-053b12d3152c0cc71"
   instance_type          = "t2.micro" 
-  key_name               = "mumbai"
+  key_name               = "kiki"
   tags = {
     Name = "u21.local"
   }
@@ -24,7 +24,7 @@ EOF
 resource "aws_instance" "frontend" { #amazon-playbook.yaml NGINX
   ami                    = "ami-0614680123427b75e"
   instance_type          = "t2.micro"
-  key_name               = "mumbai"
+  key_name               = "kiki"
   tags = {
     Name = "c8.local"
   }
